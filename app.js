@@ -1,9 +1,14 @@
-// Create the server
+// 1. Create the server
 const express = require("express");
 const app = express()
 const PORT = 5000;
 app.listen(PORT, () => {
     console.log(`Started Express server on port ${PORT}`)
+})
+
+// 2. Create a route for our index
+app.get("/", (req, res) => {
+    res.send("I am doomed")
 })
 
 
