@@ -1,11 +1,17 @@
-
+// Create the server
+const express = require("express");
+const app = express()
+const PORT = 5000;
+app.listen(PORT, () => {
+    console.log(`Started Express server on port ${PORT}`)
+})
 
 
 /* 
     1. Create an account
     To create an account, the user enters a username and a password. 
     It should not be possible to create multiple users with the same username. 
-    It should also not be possible to enter an empty username or password.*
+    It should also not be possible to enter an empty username or password.
 */
 
 
