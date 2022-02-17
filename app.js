@@ -1,5 +1,6 @@
 // 1. Create the server
 const express = require("express");
+const { read } = require("fs");
 const app = express()
 const PORT = 5000;
 app.listen(PORT, () => {
@@ -8,7 +9,8 @@ app.listen(PORT, () => {
 
 // 2. Create a route for our index
 app.get("/", (req, res) => {
-    res.send("I am doomed")
+    // res.send("I am doomed")
+    res.render("login-create-account.ejs")
 })
 
 
